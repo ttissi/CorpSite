@@ -109,7 +109,7 @@ pipeline {
                 DEPLOY_ENV = "CorpSite PROD"
             }
             steps {
-                sh 'echo "hi"'
+                sh 'echo "hi there"'
             }
         }
         stage('PROD') {
