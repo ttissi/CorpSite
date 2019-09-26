@@ -120,7 +120,7 @@ pipeline {
                     sshPublisher(continueOnError: false, failOnError: true,
                     publishers: [
                         sshPublisherDesc(
-                            configName: ${DEPLOY_ENV},
+                            configName: "${DEPLOY_ENV}",
                             verbose: true,
                             transfers: [
                                 sshTransfer(
